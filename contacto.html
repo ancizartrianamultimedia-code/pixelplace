@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Pixel Plaza</title>
+<meta name="description" content="Pixel Plaza: tienda de videojuegos, consolas y accesorios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html"><span class="dot a"></span><span class="dot b"></span>Pixel Plaza</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav id="nav"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="portafolio.html">Portafolio</a><a href="servicios.html">Servicios</a><a href="contacto.html" class=on aria-current=page>Contacto</a></nav>
+  <button class="cart" id="cart" aria-label="Ver carrito">Carrito <b id="cartN">0</b></button>
+  <button class="theme" id="theme" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
+</header>
+<main>
+<section class="wrap split">
+  <div>
+    <h1>Hablemos</h1>
+    <p class="lead">Pregunta por un título, cotiza tu usado o reserva la sala de juegos. Respondemos en menos de un día.</p>
+    <p><b>Dirección:</b> Calle 10 #5-20, Bogotá<br><b>Horario:</b> Lunes a sábado, 10 a. m. a 8 p. m.<br><b>WhatsApp:</b> 300 123 4567</p>
+  </div>
+  <form id="form" class="form" novalidate>
+    <label>Nombre<input name="nombre" type="text" autocomplete="name"><small></small></label>
+    <label>Correo<input name="correo" type="email" autocomplete="email"><small></small></label>
+    <label>Tema<select name="tema"><option value="">Elige uno</option><option>Comprar un juego</option><option>Vender un usado</option><option>Reparación</option><option>Otro</option></select><small></small></label>
+    <label>Mensaje<textarea name="mensaje" rows="4"></textarea><small></small></label>
+    <button class="btn" type="submit">Enviar mensaje</button>
+    <p id="ok" role="status"></p>
+  </form>
+</section>
+
+<section class="wrap">
+  <h2>Horarios y canales</h2>
+  <div class="grid3">
+    <div class="card"><h3>En la tienda</h3><p>Lunes a sábado, 10 a. m. a 8 p. m. Domingos, 11 a. m. a 5 p. m.</p></div>
+    <div class="card"><h3>Sala de juegos</h3><p>Jueves a domingo, 2 p. m. a 9 p. m. Reserva con un día de anticipación.</p></div>
+    <div class="card"><h3>WhatsApp</h3><p>300 123 4567. Respondemos en menos de 2 horas en horario de tienda.</p></div>
+  </div>
+</section>
+</main>
+<footer class="foot"><p>© 2026 Pixel Plaza · Calle 10 #5-20, Bogotá · hola@pixelplaza.co</p></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="./js/main.js"></script>
+</body>
+</html>

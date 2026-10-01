@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portafolio | Pixel Plaza</title>
+<meta name="description" content="Pixel Plaza: tienda de videojuegos, consolas y accesorios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html"><span class="dot a"></span><span class="dot b"></span>Pixel Plaza</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav id="nav"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="portafolio.html" class=on aria-current=page>Portafolio</a><a href="servicios.html">Servicios</a><a href="contacto.html">Contacto</a></nav>
+  <button class="cart" id="cart" aria-label="Ver carrito">Carrito <b id="cartN">0</b></button>
+  <button class="theme" id="theme" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
+</header>
+<main>
+<section class="wrap">
+  <h1>Portafolio de juegos</h1>
+  <p class="lead">Una muestra de lo que tenemos en estantería. Filtra por género.</p>
+  <div class="filters" id="filters"><button class="on" data-f="todos">Todos</button><button data-f="Acción">Acción</button><button data-f="Aventura">Aventura</button><button data-f="Deportes">Deportes</button><button data-f="Indie">Indie</button></div>
+  <div class="tools"><input id="q" type="search" placeholder="Buscar un juego" aria-label="Buscar un juego"><select id="sort" aria-label="Ordenar"><option value="">Orden original</option><option value="asc">Precio: de menor a mayor</option><option value="desc">Precio: de mayor a menor</option></select><span id="found" role="status"></span></div>
+  <div class="grid4" id="games"><article class="game" data-c="Aventura" data-p="219900" data-n="reinos de ceniza"><div class="cover c0"><span>Aventura</span></div><h3>Reinos de Ceniza</h3><p>PS5 · Aventura</p><strong>$219.900</strong><button class="btn add" data-name="Reinos de Ceniza" data-price="219900">Añadir al carrito</button></article><article class="game" data-c="Acción" data-p="189900" data-n="neón rebelde"><div class="cover c1"><span>Acción</span></div><h3>Neón Rebelde</h3><p>Xbox Series · Acción</p><strong>$189.900</strong><button class="btn add" data-name="Neón Rebelde" data-price="189900">Añadir al carrito</button></article><article class="game" data-c="Deportes" data-p="249900" data-n="liga total 26"><div class="cover c2"><span>Deportes</span></div><h3>Liga Total 26</h3><p>PS5 · Deportes</p><strong>$249.900</strong><button class="btn add" data-name="Liga Total 26" data-price="249900">Añadir al carrito</button></article><article class="game" data-c="Indie" data-p="59900" data-n="faro solitario"><div class="cover c3"><span>Indie</span></div><h3>Faro Solitario</h3><p>Switch · Indie</p><strong>$59.900</strong><button class="btn add" data-name="Faro Solitario" data-price="59900">Añadir al carrito</button></article><article class="game" data-c="Aventura" data-p="179900" data-n="bosque eterno"><div class="cover c0"><span>Aventura</span></div><h3>Bosque Eterno</h3><p>Switch · Aventura</p><strong>$179.900</strong><button class="btn add" data-name="Bosque Eterno" data-price="179900">Añadir al carrito</button></article><article class="game" data-c="Acción" data-p="129900" data-n="ruta z"><div class="cover c1"><span>Acción</span></div><h3>Ruta Z</h3><p>PC · Acción</p><strong>$129.900</strong><button class="btn add" data-name="Ruta Z" data-price="129900">Añadir al carrito</button></article><article class="game" data-c="Deportes" data-p="199900" data-n="pit stop gp"><div class="cover c2"><span>Deportes</span></div><h3>Pit Stop GP</h3><p>Xbox Series · Deportes</p><strong>$199.900</strong><button class="btn add" data-name="Pit Stop GP" data-price="199900">Añadir al carrito</button></article><article class="game" data-c="Indie" data-p="79900" data-n="cocina caótica"><div class="cover c3"><span>Indie</span></div><h3>Cocina Caótica</h3><p>Switch · Indie</p><strong>$79.900</strong><button class="btn add" data-name="Cocina Caótica" data-price="79900">Añadir al carrito</button></article><article class="game" data-c="Acción" data-p="229900" data-n="último bastión"><div class="cover c0"><span>Acción</span></div><h3>Último Bastión</h3><p>PS5 · Acción</p><strong>$229.900</strong><button class="btn add" data-name="Último Bastión" data-price="229900">Añadir al carrito</button></article><article class="game" data-c="Aventura" data-p="149900" data-n="mares de jade"><div class="cover c1"><span>Aventura</span></div><h3>Mares de Jade</h3><p>PC · Aventura</p><strong>$149.900</strong><button class="btn add" data-name="Mares de Jade" data-price="149900">Añadir al carrito</button></article><article class="game" data-c="Indie" data-p="39900" data-n="pixel granja"><div class="cover c2"><span>Indie</span></div><h3>Pixel Granja</h3><p>PC · Indie</p><strong>$39.900</strong><button class="btn add" data-name="Pixel Granja" data-price="39900">Añadir al carrito</button></article><article class="game" data-c="Deportes" data-p="169900" data-n="tenis pro open"><div class="cover c3"><span>Deportes</span></div><h3>Tenis Pro Open</h3><p>Switch · Deportes</p><strong>$169.900</strong><button class="btn add" data-name="Tenis Pro Open" data-price="169900">Añadir al carrito</button></article></div>
+  <p id="empty" class="lead" hidden>No encontramos juegos con ese nombre. Prueba con otra palabra o cambia el género.</p>
+</section>
+</main>
+<footer class="foot"><p>© 2026 Pixel Plaza · Calle 10 #5-20, Bogotá · hola@pixelplaza.co</p></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios | Pixel Plaza</title>
+<meta name="description" content="Pixel Plaza: tienda de videojuegos, consolas y accesorios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html"><span class="dot a"></span><span class="dot b"></span>Pixel Plaza</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav id="nav"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="portafolio.html">Portafolio</a><a href="servicios.html" class=on aria-current=page>Servicios</a><a href="contacto.html">Contacto</a></nav>
+  <button class="cart" id="cart" aria-label="Ver carrito">Carrito <b id="cartN">0</b></button>
+  <button class="theme" id="theme" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
+</header>
+<main>
+<section class="wrap">
+  <h1>Servicios</h1>
+  <p class="lead">Más que una caja registradora: te acompañamos antes y después de comprar.</p>
+  <div class="grid2">
+    <div class="card"><h3>Venta de juegos y consolas</h3><p>Títulos nuevos y usados para todas las plataformas, con garantía de 30 días.</p></div>
+    <div class="card"><h3>Compra de usados</h3><p>Trae tus juegos y consolas: los evaluamos en 15 minutos y te ofrecemos una oferta.</p></div>
+    <div class="card"><h3>Reparación de consolas</h3><p>Limpieza, cambio de pasta térmica, lectores y controles con drift.</p></div>
+    <div class="card"><h3>Torneos y alquiler de sala</h3><p>Celebra tu cumpleaños o arma tu torneo con pantallas, consolas y arbitraje.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Calcula lo que te pagamos por tu usado</h2>
+  <form class="form calc" id="calc">
+    <label>Producto<select id="cTipo"><option value="60000">Juego</option><option value="80000">Control</option><option value="450000">Consola portátil</option><option value="600000">Consola de mesa</option></select></label>
+    <label>Estado<select id="cEstado"><option value="1">Excelente</option><option value=".75">Bueno</option><option value=".5">Regular</option></select></label>
+    <label>Cantidad<input id="cCant" type="number" min="1" max="20" value="1"></label>
+    <button class="btn" type="submit">Calcular oferta</button>
+    <p id="cOut" role="status">Elige un producto para ver tu oferta estimada.</p>
+  </form>
+</section>
+<section class="wrap">
+  <h2>Club Pixel</h2>
+  <div class="grid3">
+    <div class="card plan"><h3>Básico</h3><p class="price">Gratis</p><ul><li>Puntos por cada compra</li><li>Aviso de ofertas</li></ul></div>
+    <div class="card plan hot"><h3>Gamer</h3><p class="price">$19.900 al mes</p><ul><li>5 % de descuento en juegos</li><li>Envío gratis desde $150.000</li><li>Prioridad en preventas</li></ul></div>
+    <div class="card plan"><h3>Pro</h3><p class="price">$39.900 al mes</p><ul><li>10 % de descuento en todo</li><li>Una hora de sala gratis al mes</li><li>Reparaciones con 15 % menos</li></ul></div>
+  </div>
+</section>
+<section class="wrap narrow">
+  <h2>Preguntas frecuentes</h2>
+  <details><summary>¿Cuánto demora la reparación de una consola?</summary><p>Entre 2 y 5 días hábiles. Te avisamos por WhatsApp cuando esté lista.</p></details>
+  <details><summary>¿Los juegos usados tienen garantía?</summary><p>Sí, 30 días. Si el disco falla, lo cambiamos por otro igual o por crédito.</p></details>
+  <details><summary>¿Puedo reservar la sala para un grupo?</summary><p>Sí, para grupos de 4 a 12 personas. Escríbenos con fecha y hora.</p></details>
+  <details><summary>¿Hacen envíos a otras ciudades?</summary><p>Sí, despachamos a todo el país y llega en 2 a 4 días.</p></details>
+</section>
+</main>
+<footer class="foot"><p>© 2026 Pixel Plaza · Calle 10 #5-20, Bogotá · hola@pixelplaza.co</p></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="./js/main.js"></script>
+</body>
+</html>

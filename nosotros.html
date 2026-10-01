@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiénes somos | Pixel Plaza</title>
+<meta name="description" content="Pixel Plaza: tienda de videojuegos, consolas y accesorios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html"><span class="dot a"></span><span class="dot b"></span>Pixel Plaza</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav id="nav"><a href="index.html">Inicio</a><a href="nosotros.html" class=on aria-current=page>Quiénes somos</a><a href="portafolio.html">Portafolio</a><a href="servicios.html">Servicios</a><a href="contacto.html">Contacto</a></nav>
+  <button class="cart" id="cart" aria-label="Ver carrito">Carrito <b id="cartN">0</b></button>
+  <button class="theme" id="theme" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
+</header>
+<main>
+<section class="wrap narrow">
+  <h1>Jugadores atendiendo a jugadores</h1>
+  <p class="lead">Pixel Plaza nació en 2019 en un local de dos metros cuadrados, con cinco consolas usadas y muchas ganas de jugar. Hoy somos un equipo de doce personas que probamos cada juego antes de venderlo.</p>
+  <p>Creemos que un buen videojuego no tiene que ser un lujo. Por eso ofrecemos precios claros, usados revisados y asesoría honesta: si un título no te va a gustar, te lo decimos.</p>
+</section>
+<section class="wrap">
+  <h2>Lo que nos importa</h2>
+  <div class="grid3">
+    <div class="card"><h3>Honestidad</h3><p>Recomendamos lo que jugaríamos nosotros.</p></div>
+    <div class="card"><h3>Comunidad</h3><p>Organizamos torneos cada mes en la tienda.</p></div>
+    <div class="card"><h3>Cuidado</h3><p>Limpiamos y probamos cada producto usado.</p></div>
+  </div>
+  <ul class="stats"><li><b>12 000</b> juegos vendidos</li><li><b>4,8 de 5</b> en reseñas</li><li><b>36</b> torneos jugados</li></ul>
+</section>
+
+<section class="wrap narrow">
+  <h2>Nuestra historia</h2>
+  <ol class="time">
+    <li><b>2019</b><p>Abrimos con cinco consolas usadas en un local de dos metros cuadrados.</p></li>
+    <li><b>2021</b><p>Pasamos a un local propio y empezamos a vender juegos nuevos.</p></li>
+    <li><b>2023</b><p>Lanzamos el Club Pixel y los torneos mensuales.</p></li>
+    <li><b>2026</b><p>Abrimos la sala de juegos y el taller de reparación.</p></li>
+  </ol>
+</section>
+<section class="wrap">
+  <h2>El equipo</h2>
+  <div class="grid4">
+    <div class="card team"><span class="av">LM</span><h3>Laura Mejía</h3><p>Fundadora y compras</p></div>
+    <div class="card team"><span class="av">DR</span><h3>Diego Ríos</h3><p>Taller de reparación</p></div>
+    <div class="card team"><span class="av">SP</span><h3>Sofía Pardo</h3><p>Atención y torneos</p></div>
+    <div class="card team"><span class="av">JT</span><h3>Juan Torres</h3><p>Logística y envíos</p></div>
+  </div>
+</section>
+</main>
+<footer class="foot"><p>© 2026 Pixel Plaza · Calle 10 #5-20, Bogotá · hola@pixelplaza.co</p></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="./js/main.js"></script>
+</body>
+</html>
